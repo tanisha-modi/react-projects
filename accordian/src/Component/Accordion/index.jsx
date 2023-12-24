@@ -9,24 +9,24 @@ function Accordion() {
   const [multiple, setMultiple] = useState([]);
 
   const handleSingleSelection = (getCurrentId) => {
-    console.log(getCurrentId);
+    // console.log(getCurrentId);
     setSelected(getCurrentId === selected ? null : getCurrentId);
   };
   const handleMultiSeletion = (getCurrentId) => {
     let cpyMultiple = [...multiple];
     const findIndexOfCurrentId = cpyMultiple.indexOf(getCurrentId);
-    console.log(findIndexOfCurrentId);
+    // console.log(findIndexOfCurrentId);
     if (findIndexOfCurrentId === -1) cpyMultiple.push(getCurrentId);
     else cpyMultiple.splice(findIndexOfCurrentId, 1);
     setMultiple(cpyMultiple);
   };
-  console.log(selected, multiple);
+  // console.log(selected, multiple);
   return (
     <div className="wrapper">
       <button
         onClick={() => {
           setEnableMultiSelection(!enableMultiSelection);
-          console.log(enableMultiSelection);
+          // console.log(enableMultiSelection);
         }}
       >
         Enable multi selection

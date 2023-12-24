@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Accordion from './Component/Accordion';
 import Random_color from './Component/Random_color';
+import StarRating from './Component/Star-Rating';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
 
       {/* Random Color Component */}
       <Random_color/>
+
+      {/* Star Rating */}
+      <StarRating noOfStars={10}/>
 
     </div>
   );

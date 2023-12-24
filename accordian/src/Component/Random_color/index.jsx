@@ -17,7 +17,7 @@ function  Random_color() {
       hexColor += hex[randomColorUtility(hex.length)];
     }
     setColor(hexColor);
-    console.log(hexColor);
+    // console.log(hexColor);
   }
   const handleCreateRandomRbgColor = () => {
     const r = randomColorUtility(256);
